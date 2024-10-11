@@ -1,5 +1,19 @@
 # ResultManager
 
+A brief discription and/or background about the project would be filled out here soon.
+
+# Components / Style Utility Library
+
+In this project, the component library of choice is [`PrimeNG`](https://primeng.org/). Below is the URL to the documentation for reference and furrther reading.
+
+
+The accompanying css utility [`PrimeFlex`](https://primeflex.org/) is also from the same ecosystem as PrimeNG. It's documentation could be access via 
+
+### Prime VS Code Extension
+https://marketplace.visualstudio.com/items?itemName=yigitfindikli.primeflexsnippets
+
+***
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
 
 ## Development server
@@ -25,3 +39,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+***
