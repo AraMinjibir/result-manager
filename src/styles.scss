@@ -3,6 +3,7 @@
 @import "primeng/resources/themes/lara-light-purple/theme";
 @import "primeng/resources/primeng";
 @import "primeflex/primeflex.css";
+@import "primeicons/primeicons.css";
 
 * {
     padding: 0;
@@ -21,4 +22,8 @@ a {
     width: 100%;
    height: auto;
    padding: 1rem 0;
+}
+
+.p-button{
+    padding: 1rem 2rem;
 }
