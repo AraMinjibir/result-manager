@@ -1,0 +1,46 @@
+<div class="card my-5 w-30rem m-auto">
+    <p-card header="">
+        <div class="logo border-2">
+            <i class="pi pi-cube"></i>
+        </div>
+        <div class="heading my-3">
+            <div class="mb-3">
+                <h2> Welcome Back </h2>
+            </div>
+            <div>
+                <p>Don't have an account? <a href="#"> Create today! </a></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card  mb-3">
+               <div class="my-3">
+                <p-floatLabel>
+                    <h4 class="my-1">Email</h4>
+                    <input pInputText id="email" [(ngModel)]="value" />
+                    <label for="email">Email address </label>
+                </p-floatLabel>
+               </div>
+               <div class="my-3">
+                <p-floatLabel>
+                    <h4 class="my-1">Password</h4>
+                    <input pInputText id="password" [(ngModel)]="value" />
+                    <label for="email"> Password </label>
+                </p-floatLabel>
+               </div>
+            </div>
+            <div>
+                <div class="card mt-3 flex justify-content-between  mb-3">
+                    <form class="flex align-items-center gap-1">
+                        <p-checkbox value="Remember me" inputId="rm" />
+                        <label for="ny">Remember me</label>
+                    </form>
+                    <div class=" py-4">
+                        <a href="#">Forgot password? </a>
+                    </div>
+                </div>
+            </div>
+
+            <p-button label="Sign in" [raised]="true" severity="help" />
+        </div>
+    </p-card>
+</div>
