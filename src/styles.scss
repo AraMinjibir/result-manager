@@ -5,25 +5,3 @@
 @import "primeflex/primeflex.css";
 @import "primeicons/primeicons.css";
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-}
-
-.p-card .p-card-body{
-    padding: 3rem;
-}
-
-.p-component, .p-component{
-    width: 100%;
-   height: auto;
-   padding: 1rem 0;
-}
-
-.p-button{
-    padding: 1rem 2rem;
-}
