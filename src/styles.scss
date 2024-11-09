@@ -2,3 +2,23 @@
 @import "primeflex/themes/primeone-light";
 @import "primeng/resources/themes/lara-light-purple/theme";
 @import "primeng/resources/primeng";
+@import "primeflex/primeflex.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+.p-card .p-card-body{
+    padding: 3rem;
+}
+
+.p-component, .p-component{
+    width: 100%;
+   height: auto;
+   padding: 1rem 0;
+}
