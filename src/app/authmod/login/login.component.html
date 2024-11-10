@@ -1,25 +1,25 @@
-<div class="card my-5 w-30rem m-auto">
+<div class=" w-30rem m-auto">
     <p-card header="">
-        <div class="logo">
+        <div class="px-3">
             <i class="pi pi-box"></i>
         </div>
-        <div class="heading my-3">
+        <div class="heading my-2 px-3">
             <div class="mb-3">
                 <h2 class="text-gray-700 font-medium"> Welcome Back </h2>
             </div>
             <div>
                 <p class="text-gray-500 font-normal"> Don't have an account?
-                    <a href="#" class="text-primary font-normal"> Create today! </a>
+                    <a href="#" class="text-primary font-normal no-underline ml-2"> Create today! </a>
                 </p>
             </div>
         </div>
-        <div>
+        <div class="px-3">
 
             <div class="my-3">
-                <h4 class="text-gray-700 font-medium my-1">Email</h4>
+                <h4 class="text-gray-700 font-medium my-1 ">Email</h4>
             </div>
             <p-floatLabel>
-                <input pInputText id="email" />
+                <input pInputText id="email" class="w-full" />
                 <label for="email">Email address </label>
             </p-floatLabel>
 
@@ -27,11 +27,11 @@
                 <h4 class="text-gray-700 font-medium my-1">Password</h4>
             </div>
             <p-floatLabel>
-                <input pInputText id="password" />
+                <input pInputText id="password" class="w-full"/>
                 <label for="email"> Password </label>
             </p-floatLabel>
         </div>
-        <div>
+        <div class="px-3">
             <div class=" grid  my-3 px-0">
 
                 <form class=" md:col-6 col-12 flex align-items-center gap-1">
@@ -39,14 +39,12 @@
                     <label for="ny">Remember me</label>
                 </form>
                 <div class=" md:col-6 col-12 py-4 md:text-right">
-                    <a href="#" class="text-primary font-normal">Forgot password? </a>
+                    <a href="#" class="text-primary font-normal no-underline">Forgot password? </a>
                 </div>
             </div>
         </div>
-
-        <div>
-            <p-button icon="pi pi-user" label="Sign In" />
-        </div>
-    
+        <div class="flex w-full px-3">
+            <p-button icon="pi pi-user" label="Sign In" class="w-full"></p-button>
+        </div>      
     </p-card>
 </div>
