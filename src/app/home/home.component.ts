@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { LoginPageComponent } from './login-page/login-page.component';
+
 
 
 @Component({
   selector: 'home',
   standalone: true,
-  imports: [LoginPageComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
