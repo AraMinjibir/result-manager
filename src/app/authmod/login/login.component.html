@@ -1,62 +1,38 @@
-<div class="overflow-hidden flex justify-content-center align-items-center min-h-screen">
-    <p-card class="w-5">
-        <div class="md:px-4">
-            <div class="header flex  flex-column md:justify-content-start md:align-items-start 
-            justify-content-center align-items-center border-1">
-                <div class="border-0">
-                    <i class="pi pi-box"></i>
-                </div>
-                <div class="heading my-2 border-1 w-full lg:text-left text-center">
-                    <div class="mb-3">
-                        <h2 class="text-gray-700 font-medium"> Welcome Back </h2>
-                    </div>
-                    <div>
-                        <p class="text-gray-500 font-normal"> Don't have an account?
-                            <a href="#" class="text-primary font-normal no-underline "> Create today! </a>
-                        </p>
-                    </div>
-                </div>
+<div class="flex justify-content-center align-items-center h-screen">
+    <p-card class="w-full max-w-30rem mx-1 md:mx-0">
+            <div class="text-center mb-6">
+                <i class="pi pi-box"></i>
+                <h2 class="text-gray-700 font-medium"> Welcome Back </h2>
+                <p class="text-gray-500 font-normal"> Don't have an account?
+                <a href="#" class="text-primary font-normal no-underline "> Create today! </a>
+                </p>
             </div>
-            <div class="">
-    
-                <div class="my-3">
-                    <h4 class="text-gray-700 font-medium my-3 ">Email</h4>
-                    <p-floatLabel>
-                        <input pInputText id="email" class="w-full" />
-                        <label for="email">Email address </label>
-                    </p-floatLabel>
-                </div>
-                <div class="my-3">
-                    <h4 class="text-gray-700 font-medium my-3">Password</h4>
-                
-                    <p-floatLabel>
-                        <input pInputText id="password" class="w-full"/>
-                        <label for="email"> Password </label>
-                    </p-floatLabel>
-                </div>
+            <div class="mb-5">
+                <p-floatLabel>
+                    <input pInputText id="email" class="w-full" />
+                    <label for="email">Email address </label>
+                </p-floatLabel>
             </div>
-            <div class="">
-                <div class=" grid  my-3 px-0">
-    
-                    <form class=" lg:col-6 md:col-12 flex align-items-center gap-1">
-                        <p-checkbox value="Remember me" inputId="rm" />
+            <div>
+                <p-floatLabel>
+                    <input pInputText id="password" class="w-full"/>
+                    <label for="email"> Password </label>
+                </p-floatLabel>
+            </div>
+            <div class="flex justify-content-between my-6">
+                <form class="flex align-items-center gap-1">
+                     <p-checkbox value="Remember me" inputId="rm" />
                         <label for="ny">Remember me</label>
-                    </form>
-                    <div class=" lg:col-6 md:col-12 py-4 lg:text-right">
-                        <a href="#" class="text-primary font-normal no-underline">Forgot password? </a>
-                    </div>
-                </div>
+                </form>
+                <a href="#" class="text-primary font-normal no-underline">Forgot password? </a>
             </div>
-            <div class="card flex justify-content-center">
-                <button 
-                    pButton 
-                    pRipple 
-                    icon="pi pi-user"
-                    label="Sign In" 
-                    class="p-button-help w-full px-2">
-                </button>
-            </div>     
-        </div>
+            <button 
+                pButton 
+                pRipple 
+                icon="pi pi-user"
+                label="Sign In" 
+                class="p-button-help w-full px-2">
+            </button>    
     </p-card>
     
 </div>
