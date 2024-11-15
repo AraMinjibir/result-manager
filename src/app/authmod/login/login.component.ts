@@ -6,6 +6,7 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
 
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -16,5 +17,7 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  checked: boolean = false;
+
 
 }
