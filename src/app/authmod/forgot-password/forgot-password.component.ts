@@ -6,13 +6,12 @@ import { ButtonModule } from 'primeng/button';
 
 
 @Component({
-  selector: 'forgot-password',
-  standalone: true,
-  imports: [CardModule, InputTextModule,
-    FloatLabelModule, ButtonModule
-  ],
-  templateUrl: './forgot-password.component.html',
-  styleUrl: './forgot-password.component.scss'
+    selector: 'forgot-password',
+    imports: [CardModule, InputTextModule,
+        FloatLabelModule, ButtonModule
+    ],
+    templateUrl: './forgot-password.component.html',
+    styleUrl: './forgot-password.component.scss'
 })
 export class ForgotPasswordComponent {
 
