@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 export const routes: Routes = [
   {
@@ -13,6 +14,10 @@ export const routes: Routes = [
       import('./authmod/authmod.module').then((a) => a.AuthmodModule),
   },
 
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+  },
   // This route should always be the last one.
   {
     path: "**",
