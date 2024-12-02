@@ -5,6 +5,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 
 
 
+
 const routes: Routes = [
   {
     path: '',
@@ -19,6 +20,7 @@ const routes: Routes = [
     path: 'forgot-password',
     component: ForgotPasswordComponent,
   },
+  
 ];
 
 @NgModule({

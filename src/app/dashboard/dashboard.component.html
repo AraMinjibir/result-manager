@@ -1,0 +1,22 @@
+<div class="grid p-5">
+    <h3 class="text-gray-500 font-semibold text-xl text-center col-12">Students Performance</h3>
+    <h3 class="text-gray-500 font-medium text-lg text-center col-12">Stats</h3>
+    <div *ngFor = "let stat of stats" class="col-12 sm:col-6 lg:col-3 p-2">
+        <p-card
+         class="w-full">
+            <h3 class="mt-0 text-gray-400 font-normal text-base">{{ stat.title}}</h3>
+            <p class="text-gray-400 font-light text-sm">
+                {{ stat.no}}
+            </p>
+        </p-card>
+    </div>
+    <h3 class="text-gray-500 font-medium text-lg text-center col-12 my-5">Recent</h3>
+    <div *ngFor = "let rec of recent" class="col-12 sm:col-6 lg:col-3 p-2">
+        <p-card>
+            <h3 class="mt-0 text-gray-400 font-normal text-base">{{ rec.title }}</h3>
+                <p class="text-gray-400 font-light text-sm">
+                    {{ rec.no}}
+                </p>
+            </p-card>
+    </div>
+</div>
