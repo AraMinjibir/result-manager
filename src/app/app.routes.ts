@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
   {
@@ -22,8 +22,7 @@ export const routes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
   },
-  // This route should always be the last one.
-  {
+  {// This route should always be the last one.
     path: "**",
     component: PageNotFoundComponent
   }
