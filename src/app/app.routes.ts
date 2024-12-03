@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 
 export const routes: Routes = [
