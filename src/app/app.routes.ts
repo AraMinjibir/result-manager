@@ -14,11 +14,6 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./authmod/authmod.module').then((a) => a.AuthmodModule),
   },
-
-  {
-    path: 'dashboard',
-    component: DashboardComponent,
-  },
   {
     path: 'app-layout',
     component: AppLayoutComponent
