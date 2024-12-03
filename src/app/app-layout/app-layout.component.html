@@ -1,5 +1,5 @@
 <div class="grid p-5">
-    <div class="col-3 h-screen">
+    <div class="col-2 h-screen">
         <p-sidebar [(visible)]="sidebarVisible">
             <h3>Sidebar</h3>
             <p>
@@ -9,8 +9,7 @@
         <p-button (onClick)="sidebarVisible = true" icon="pi pi-bars" />
         
     </div>
-    <div class="col-9">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias est nobis porro quo autem voluptatem voluptates inventore corrupti ab? Molestiae, 
-            officia fuga! Et nisi ipsa ducimus necessitatibus non, est odit.</p>
+    <div class="col-10">
+       <dashboard></dashboard>
     </div>
 </div>
