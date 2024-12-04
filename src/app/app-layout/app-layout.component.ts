@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { SidebarModule } from 'primeng/sidebar';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
-import { AvatarModule } from 'primeng/avatar';
+import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [SidebarModule, ButtonModule,
-    DashboardComponent, HeaderComponent, AvatarModule
-  ],
+  imports: [DashboardComponent, HeaderComponent, SidebarComponent],
   templateUrl: './app-layout.component.html',
   styleUrl: './app-layout.component.scss'
 })
 export class AppLayoutComponent {
 
-  sidebarVisible: boolean = false;
+  
 }

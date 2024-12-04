@@ -1,19 +1,6 @@
 <div class="grid">
     <div class="col-2 h-screen">
-        <p-sidebar #sidebarRef [(visible)]="sidebarVisible">
-            <ng-template pTemplate="headless">
-                <div class="flex align-items-center w-full border-2">
-                    <p-avatar 
-                    icon="pi pi-box" 
-                    size="xlarge" 
-                    shape="circle"/>
-                    <p>
-                </div>
-                </ng-template>
-                </p-sidebar>
-                <p-button (onClick)="sidebarVisible = true"
-                icon="pi pi-bars" 
-                severity="secondary" />
+        <sidebar></sidebar>
     </div>
     <div class="col-10 p-0">
         <header></header>
