@@ -18,6 +18,11 @@ export const routes: Routes = [
     path: 'app-layout',
     component: AppLayoutComponent
   },
+  {
+    path: 'app-layout',
+    loadChildren: () =>
+      import('./app-layout/app.module').then((a)=> a.AppModule)
+  },
   // This route should always be the last one.
   {
     path: "**",
