@@ -1,0 +1,46 @@
+<div class="grid w-full md:p-8 mx-auto">
+    <p-card class="col-12">
+      <h4 class="text-center font-bold text-bluegray-300">Student Profile</h4>
+      <div *ngFor="let detail of details">
+        <h5 class="font-semibold text-gray-400">Name: {{ detail.name }}</h5>
+        <h5 class="font-semibold text-gray-400">Id: {{ detail.id }}</h5>
+        <h5 class="font-semibold text-gray-400">Class: {{ detail.class }}</h5>
+        <h5 class="font-semibold text-gray-400">Gender: {{ detail.gender }}</h5>
+        <h5 class="font-semibold text-gray-400">Age: {{ detail.age }}</h5>
+      </div>
+    </p-card>
+  
+    <p-card class="col-12">
+      <form [formGroup]="formGroup" (ngSubmit)="onSubmitForm()">
+        <div formArrayName="studentSubjects" *ngFor="let subject of studentSubjects.controls; let i = index" class="mb-3">
+          <div [formGroupName]="i" class="flex flex-column sm:flex-column 
+          md:flex-row md:justify-content-between sm:align-items-center gap-2">
+            <p-dropdown 
+              formControlName="selectedSubject"
+              [options]="subjects"
+              optionLabel="name"
+              placeholder="Select a Subject"
+              class="w-full sm:w-6 md:w-5">
+            </p-dropdown>
+            <p-inputNumber 
+              inputId="marks"
+              formControlName="marks"
+              [showButtons]="true"
+              [min]="0"
+              [max]="100"
+              class="">
+            </p-inputNumber>
+            <button type="button" pButton icon="pi pi-trash" class="p-button-danger" 
+              (click)="removeSubjectRow(i)" *ngIf="studentSubjects.length > 1">
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-content-between">
+          <button type="button" pButton label="Add Subject" (click)="addSubjectRow()"></button>
+          <button type="submit" pButton label="Submit" class="p-button-success"></button>
+        </div>
+        
+      </form>
+    </p-card>
+  </div>
+  
