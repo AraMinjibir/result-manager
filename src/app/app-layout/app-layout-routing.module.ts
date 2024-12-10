@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StudentProfileComponent } from './student-profile/student-profile.component';
-import { StudentRecordsComponent } from './student-records/student-records.component';
+import { ResultsEntryComponent } from './results-entry/results-entry.component';
+
+
 
 const routes: Routes = [
   {
@@ -14,10 +16,9 @@ const routes: Routes = [
     component: StudentProfileComponent
   },
   {
-    path: 'student-records',
-    component: StudentRecordsComponent
-  },
-  
+    path: 'results-entry',
+    component: ResultsEntryComponent
+  }
 ]
 
 @NgModule({
