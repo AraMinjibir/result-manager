@@ -1,4 +1,4 @@
-<div class="student-records py-4 px-8 h-full">
+<div class="py-4 px-8 h-full">
     <h2 class="text-center font-bold text-bluegray-300 mb-4">Student Records</h2>
     <p-iconField iconPosition="left" class="flex justify-content-center">
         <p-inputIcon styleClass="pi pi-search" />
@@ -10,7 +10,8 @@
     </p-iconField>
     <p-table [value]="filteredStudents" [paginator]="true" [rows]="5"
      [responsiveLayout]="'scroll'" [sortField]="'name'"
-        [sortOrder]="1">
+        [sortOrder]="1"
+        [tableStyle]="{'width':'50rem', 'margin': 'auto'}">
         <ng-template pTemplate="header">
             <tr>
                 <th pSortableColumn="id">ID <p-sortIcon field="id"></p-sortIcon></th>
