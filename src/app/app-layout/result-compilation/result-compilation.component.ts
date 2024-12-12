@@ -11,10 +11,13 @@ import { TableModule } from 'primeng/table';
 })
 export class ResultCompilationComponent {
 
-  results = [
-    {name: 'Mjb', subject: 'Computer', totalMarks: 50},
-    {name: 'Kano', subject: 'Computer', totalMarks: 30},
-    {name: 'Nigeria', subject: 'Computer', totalMarks: 20},
-    {name: 'Africa', subject: 'Computer', totalMarks: 35},
-  ]
+    students = [
+    { id: 'S101', name: 'Abubakar', class: '10A', subject:'Statistics', totalMarks: 68 },
+    { id: 'S102', name: 'Jabir', class: '9B', subject:'Computer', totalMarks: 70},
+    { id: 'S103', name: 'Minjibir', class: '8C', subject:'Mathematics', totalMarks: 55 },
+    { id: 'S104', name: 'Kano', class: '11A', subject:'Physics', totalMarks: 40 },
+    { id: 'S105', name: 'Nigeria', class: '10B', subject:'English', totalMarks: 15 },
+  ];
+
+  
 }

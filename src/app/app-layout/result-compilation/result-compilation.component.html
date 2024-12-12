@@ -1,20 +1,31 @@
-  <div class="h-full p-8 border-3">
+  <div class="h-full md:p-8">
     <h3 class="text-center font-bold text-bluegray-300 mb-4">Compilation Section</h3>
-    <p-table [value]="results" [paginator]="true" [rows]="10" [tableStyle]="{'width':'50rem', 'margin': 'auto'}">
+    <p-table [value]="students" [paginator]="true" [rows]="5"
+     [responsiveLayout]="'scroll'" [sortField]="'name'"
+        [sortOrder]="1"
+        [tableStyle]="{'width':'50rem', 'margin': 'auto'}">
         <ng-template pTemplate="header">
-          <tr>
-            <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
-            <th>Subject</th>
-            <th pSortableColumn="totalMarks">Total Marks <p-sortIcon field="totalMarks"></p-sortIcon></th>
-          </tr>
+            <tr>
+                <th pSortableColumn="id" class="font-semibold text-gray-400"
+                >ID <p-sortIcon field="id"></p-sortIcon></th>
+                <th pSortableColumn="name" class="font-semibold text-gray-400"
+                >Name <p-sortIcon field="name"></p-sortIcon></th>
+                <th class="font-semibold text-gray-400">Class</th>
+                <th pSortableColumn="subject" class="font-semibold text-gray-400"
+                >Subject<p-sortIcon field="id"></p-sortIcon></th>
+                <th pSortableColumn="totalMarks" class="font-semibold text-gray-400"
+                >Total Marks<p-sortIcon field="id"></p-sortIcon></th>
+            </tr>
         </ng-template>
-        <ng-template pTemplate="body" let-result>
-          <tr>
-            <td>{{ result.name }}</td>
-            <td>{{ result.subject }}</td>
-            <td>{{ result.totalMarks }}</td>
-          </tr>
+        <ng-template pTemplate="body" let-student>
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.class }}</td>
+                <td>{{ student.subject }}</td>
+                <td>{{ student.totalMarks }}</td>
+            </tr>
         </ng-template>
-      </p-table>
+    </p-table>
   </div>
   

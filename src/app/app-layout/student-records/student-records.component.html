@@ -10,7 +10,8 @@
     </p-iconField>
     <p-table [value]="filteredStudents" [paginator]="true" [rows]="5"
      [responsiveLayout]="'scroll'" [sortField]="'name'"
-        [sortOrder]="1">
+        [sortOrder]="1"
+        [tableStyle]="{'width':'50rem', 'margin': 'auto'}">
         <ng-template pTemplate="header">
             <tr>
                 <th pSortableColumn="id">ID <p-sortIcon field="id"></p-sortIcon></th>
