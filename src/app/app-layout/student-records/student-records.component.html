@@ -14,9 +14,13 @@
         [tableStyle]="{'width':'50rem', 'margin': 'auto'}">
         <ng-template pTemplate="header">
             <tr>
-                <th pSortableColumn="id">ID <p-sortIcon field="id"></p-sortIcon></th>
-                <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
-                <th>Class</th>
+                <th pSortableColumn="id"
+                class="font-semibold text-gray-400"
+                >ID <p-sortIcon field="id"></p-sortIcon></th>
+                <th pSortableColumn="name"
+                class="font-semibold text-gray-400"
+                >Name <p-sortIcon field="name"></p-sortIcon></th>
+                <th class="font-semibold text-gray-400">Class</th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-student>
