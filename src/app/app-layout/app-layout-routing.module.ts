@@ -6,6 +6,7 @@ import { ResultsEntryComponent } from './results-entry/results-entry.component';
 import { StudentRecordsComponent } from './student-records/student-records.component';
 import { ResultCompilationComponent } from './result-compilation/result-compilation.component';
 import { StudentsMarkRecodingComponent } from './students-mark-recoding/students-mark-recording.component';
+import { IndividualResultsComponent } from './individual-results/individual-results.component';
 
 
 
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'marks-recording',
     component: StudentsMarkRecodingComponent
+  },
+  {
+    path: 'individual-results',
+    component: IndividualResultsComponent
   }
 ]
 

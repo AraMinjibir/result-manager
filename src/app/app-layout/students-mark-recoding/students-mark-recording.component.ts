@@ -14,7 +14,7 @@ import { ButtonModule } from 'primeng/button';
   imports: [TableModule, CardModule, DropdownModule,
     ReactiveFormsModule, InputNumberModule,InputTextModule,
     NgFor, ButtonModule],
-  templateUrl: './students-mark-recoding.component.html',
+  templateUrl: './students-mark-recording.component.html',
   styleUrl: './students-mark-recording.component.scss'
 })
 export class StudentsMarkRecodingComponent {
