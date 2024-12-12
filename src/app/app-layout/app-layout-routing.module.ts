@@ -5,6 +5,7 @@ import { StudentProfileComponent } from './student-profile/student-profile.compo
 import { ResultsEntryComponent } from './results-entry/results-entry.component';
 import { StudentRecordsComponent } from './student-records/student-records.component';
 import { ResultCompilationComponent } from './result-compilation/result-compilation.component';
+import { StudentsMarkRecodingComponent } from './students-mark-recoding/students-mark-recoding.component';
 
 
 
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'result-compilation',
     component: ResultCompilationComponent
+  },
+  {
+    path: 'marks-recording',
+    component: StudentsMarkRecodingComponent
   }
 ]
 
