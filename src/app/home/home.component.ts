@@ -5,6 +5,7 @@ import { SidebarModule } from 'primeng/sidebar';
 
 @Component({
     selector: 'home',
+    standalone: true,
     imports: [ButtonModule, MenuModule, SidebarModule],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'

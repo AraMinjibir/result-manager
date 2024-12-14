@@ -1,0 +1,21 @@
+<p-sidebar #sidebarRef [(visible)]="sidebarVisible">
+    <ng-template pTemplate="headless">
+        <div class="flex align-items-center w-full px-3 bg-gray-700">
+            <p-avatar 
+            icon="pi pi-box" 
+            size="xlarge" 
+            shape="circle"/>
+            <p>
+        </div>
+        <li class="px-3 py-6 bg-gray-600 h-full list-none">
+             <ul class="px-1">
+                <i class="pi pi-home mr-2 text-gray-400"></i>
+                <a routerLink="/app-layout/dashboard"
+                    class="no-underline font-normal text-gray-400">Dashboard</a>
+            </ul>
+        </li>
+        </ng-template>
+        </p-sidebar>
+        <p-button (onClick)="sidebarVisible = true"
+        icon="pi pi-bars" 
+        severity="secondary" />
