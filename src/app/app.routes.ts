@@ -9,10 +9,7 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
+
   {
     path: 'auth',
     loadChildren: () =>
@@ -22,16 +19,12 @@ export const routes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
   },
-<<<<<<< HEAD
-  {// This route should always be the last one.
-=======
   {
     path: 'app-layout',
     component: AppLayoutComponent
   },
   // This route should always be the last one.
   {
->>>>>>> e5ae914 (final submission)
     path: "**",
     component: PageNotFoundComponent
   }
