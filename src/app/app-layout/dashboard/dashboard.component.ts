@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CardModule } from 'primeng/card';
-import { NgFor } from '@angular/common';
+
 
 
 @Component({
