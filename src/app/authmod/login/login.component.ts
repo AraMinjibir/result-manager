@@ -10,6 +10,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-login',
+    standalone: true,
     imports: [CardModule, InputTextModule, FormsModule,
         FloatLabelModule, CheckboxModule, ButtonModule, RouterLink
     ],

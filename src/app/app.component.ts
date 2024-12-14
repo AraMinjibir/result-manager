@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeComponent } from './home/home.component';
 import { PrimeNGConfig } from 'primeng/api';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-root',
-    imports: [HomeComponent, RouterOutlet],
+    standalone: true,
+    imports: [RouterOutlet],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
