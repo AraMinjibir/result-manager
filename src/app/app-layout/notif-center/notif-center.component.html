@@ -1,0 +1,38 @@
+<form [formGroup]="formGroup" class="flex flex-column 
+        align-items-center md:p-8 p-2">
+    <p-card class="max-w-30rem">
+        <h1 class="text-center m-0 font-bold text-bluegray-300">Notification Center</h1>
+        <h3 class="text-center font-semibold text-gray-400">
+            Compose Message and send to students' parent/gurdian</h3>
+        <p-dropdown formControlName="selectedRecipient" 
+        [options]="recipients" [showClear]="true" 
+        [filter]="true" filterBy="label"
+        optionLabel="label" placeholder="Select a Receipient"
+        styleClass="my-3"/>
+        <p-dropdown 
+        [options]="templates" 
+        formControlName="template" 
+         optionLabel="code"
+        placeholder="Select a template"
+        (onChange)="applyTemplate($event)"
+        class="ml-2"/>
+        <textarea 
+        rows="5" cols="30" pInputTextarea formControlName="message"
+         placeholder="Compose Your Mesage Here" class="w-full my-3">
+        </textarea>
+        <div class="flex align-items-center gap-3 my-3">
+            <div *ngFor="let category of categories" class="flex align-items-center">
+                <p-radioButton 
+                    [inputId]="category.key" 
+                    [value]="category" 
+                    formControlName="deliveryMethod">
+                </p-radioButton>
+                <label [for]="category.key" class="ml-2">
+                    {{ category.name }}
+                </label>
+            </div>
+        </div>
+       <p-button label="Send" severity="success" type="submit" 
+            (click)="OnSubmit()" styleClass="w-full mt-5" />
+    </p-card>
+</form>

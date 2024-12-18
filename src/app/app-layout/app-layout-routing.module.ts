@@ -8,6 +8,7 @@ import { ResultCompilationComponent } from './result-compilation/result-compilat
 import { StudentsMarkRecodingComponent } from './students-mark-recoding/students-mark-recording.component';
 import { IndividualResultsComponent } from './individual-results/individual-results.component';
 import { NotificationPreferenceComponent } from './notification-preference/notification-preference.component';
+import { NotifCenterComponent } from './notif-center/notif-center.component';
 
 
 
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'notification-preference',
     component: NotificationPreferenceComponent
+  },
+  {
+    path: 'notif-center',
+    component: NotifCenterComponent
   }
 ]
 

@@ -6,12 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { BadgeModule } from 'primeng/badge';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'header',
   standalone: true,
   imports: [InputTextModule,InputIconModule, IconFieldModule, 
-      InputTextModule, FormsModule, ButtonModule, AvatarModule, BadgeModule],
+      InputTextModule, FormsModule, ButtonModule, AvatarModule, BadgeModule, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
