@@ -5,7 +5,7 @@ import { AppLayoutComponent } from './app-layout/app-layout.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'auth',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
@@ -16,11 +16,6 @@ export const routes: Routes = [
   {
     path: 'app-layout',
     component: AppLayoutComponent
-  },
-  {
-    path: 'app-layout',
-    loadChildren: () =>
-      import('./app-layout/app.module').then((a)=> a.AppModule)
   },
   // This route should always be the last one.
   {
