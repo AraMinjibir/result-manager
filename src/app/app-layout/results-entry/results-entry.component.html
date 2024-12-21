@@ -1,0 +1,45 @@
+<div class="grid w-full lg:w-10  mx-auto h-full">
+    <div class="col-12 text-center mb-3">
+      <h3 class="font-bold text-bluegray-300">Results Entry Screen</h3>
+      <p class="font-semibold text-gray-400"> Write the student name and marks below</p>
+    </div>
+  
+    <p-card class="col-12">
+      <form [formGroup]="resultsForm" (ngSubmit)="onSubmit()">
+        <div formArrayName="students" *ngFor="let student of students.controls; let i = index" class="mb-3">
+          <div [formGroupName]="i" class="flex flex-column md:flex-row md:justify-content-between gap-3">
+                <input type="text" 
+                    pInputText
+                    placeholder="Student Name"
+                    formControlName="name" />
+                <p-dropdown
+                formControlName="subject"
+                [options]="subjects"
+                optionLabel="name"
+                placeholder="Select Subject"
+                class="w-full md:w-3"
+                ></p-dropdown>
+                <div class="flex justify-content-between">
+                    <p-inputNumber
+                    formControlName="marks"
+                    [min]="0"
+                    [max]="100"
+                    placeholder="Marks"
+                    class="w-full md:w-2 p-0"
+                    ></p-inputNumber>
+                    <p-button 
+                    icon="pi pi-trash"
+                    (click)="removeStudentRow(i)"
+                    severity="danger"
+                    class="md:ml-1" />
+                </div>
+          </div>
+        </div>
+        <div class="flex justify-content-between mt-4">
+            <p-button label="Add Student" severity="help" (click)="addStudentRow()" />
+            <p-button type="submit" label="Save" severity="success" />
+        </div>
+      </form>
+    </p-card>
+  </div>
+  
