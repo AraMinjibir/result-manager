@@ -9,13 +9,13 @@ import { RouterLink } from '@angular/router';
 
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [CardModule,InputTextModule, FormsModule,
-    FloatLabelModule,CheckboxModule,ButtonModule, RouterLink
-  ],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+    selector: 'app-login',
+    standalone: true,
+    imports: [CardModule, InputTextModule, FormsModule,
+        FloatLabelModule, CheckboxModule, ButtonModule, RouterLink
+    ],
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.scss'
 })
 export class LoginComponent {
   checked: boolean = false;
