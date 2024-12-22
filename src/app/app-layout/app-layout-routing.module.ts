@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { StudentProfileComponent } from './student-profile/student-profile.component';
 import { ResultsEntryComponent } from './results-entry/results-entry.component';
 import { StudentRecordsComponent } from './student-records/student-records.component';
+import { ResultCompilationComponent } from './result-compilation/result-compilation.component';
 
 
 
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'student-records',
     component: StudentRecordsComponent
+  },
+  {
+    path: 'result-compilation',
+    component: ResultCompilationComponent
   }
 ]
 
