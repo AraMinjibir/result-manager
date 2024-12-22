@@ -7,6 +7,7 @@ import { StudentRecordsComponent } from './student-records/student-records.compo
 import { ResultCompilationComponent } from './result-compilation/result-compilation.component';
 import { StudentsMarkRecodingComponent } from './students-mark-recoding/students-mark-recording.component';
 import { IndividualResultsComponent } from './individual-results/individual-results.component';
+import { NotificationPreferenceComponent } from './notification-preference/notification-preference.component';
 
 
 
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'individual-results',
     component: IndividualResultsComponent
+  },
+  {
+    path: 'notification-preference',
+    component: NotificationPreferenceComponent
   }
 ]
 

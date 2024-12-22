@@ -1,0 +1,44 @@
+<p-card styleClass="max-w-30rem mx-auto md:px-4 h-full text-center">
+    <h2 class="font-bold text-bluegray-400">Notification Preferences</h2>
+    <p  class="font-medium text-gray-400">Choose how you'd like to receive notifications.</p>
+    <form [formGroup]="formGroup">
+        <h4 class="font-semibold text-gray-400">Email Notification</h4>
+        <div class="flex">
+            <p-toggleButton 
+            formControlName="email" 
+            onLabel="On" offLabel="Off"
+            class="mr-2 md:mr-3">
+        </p-toggleButton>
+        <input type="text" pInputText formControlName="emailAddress" 
+        placeholder="Enter your Email Address" class="w-full"/>
+        </div>
+        <h4  class="font-semibold text-gray-400">SMS Notification</h4>
+        <div class="flex">
+        <p-toggleButton 
+            formControlName="sms" 
+            onLabel="On" offLabel="Off"
+            class="mr-2 md:mr-3">
+        </p-toggleButton>
+        <input type="text" pInputText formControlName="smsNotif" 
+        placeholder="Enter your Phone Number" class="w-full"/>
+        </div>
+        <h4  class="font-semibold text-gray-400">How Frequent do you want it</h4>
+        <div *ngFor="let option of frequencyOptions" class="field-checkbox font-medium text-gray-400">
+            <p-radioButton 
+                name="frequency" 
+                [value]="option.value" 
+                formControlName="frequency" 
+                [label]="option.label">
+            </p-radioButton>
+        </div>
+        <div class="mt-4 text-left md:text-right">
+            <p-button 
+                type="submit"
+                label="Save Preferences"
+                severity="success"
+                (click) = "OnsubmitPreference()">
+            </p-button>
+        </div>      
+    </form>
+  </p-card>
+  
