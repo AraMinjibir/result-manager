@@ -1,0 +1,34 @@
+<div class="py-4 px-8 h-full">
+    <h2 class="text-center font-bold text-bluegray-300 mb-4">Student Records</h2>
+    <p-iconField iconPosition="left" class="flex justify-content-center">
+        <p-inputIcon styleClass="pi pi-search" />
+        <input type="text"
+         pInputText
+         [(ngModel)]="searchText"
+          placeholder="Search students by name or ID" 
+          class="border-round w-full px-5 py-2 my-3"/>
+    </p-iconField>
+    <p-table [value]="filteredStudents" [paginator]="true" [rows]="5"
+     [responsiveLayout]="'scroll'" [sortField]="'name'"
+        [sortOrder]="1"
+        [tableStyle]="{'width':'50rem', 'margin': 'auto'}">
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="id"
+                class="font-semibold text-gray-400"
+                >ID <p-sortIcon field="id"></p-sortIcon></th>
+                <th pSortableColumn="name"
+                class="font-semibold text-gray-400"
+                >Name <p-sortIcon field="name"></p-sortIcon></th>
+                <th class="font-semibold text-gray-400">Class</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-student>
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.class }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

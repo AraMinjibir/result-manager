@@ -7,7 +7,7 @@ import { ButtonModule } from 'primeng/button';
 
 @Component({
     selector: 'forgot-password',
-    standalone: true,
+    standalone:true,
     imports: [CardModule, InputTextModule,
         FloatLabelModule, ButtonModule
     ],
