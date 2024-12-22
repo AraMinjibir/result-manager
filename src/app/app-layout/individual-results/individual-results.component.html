@@ -1,0 +1,33 @@
+<p-card>
+    <h3 class="text-center font-bold text-bluegray-400">{{ details.name }} Profile</h3>
+    <div class="font-semibold text-gray-400">
+        <h4>Reg: {{ details.id }}</h4>
+        <h4>Name: {{ details.name }}</h4>
+        <h4>Class: {{ details.class }}</h4>
+        <h4>Gender: {{ details.gender}}</h4>
+    </div>
+
+    <p-table [value]="results" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate =  "header">
+            <tr>
+                <th class="font-bold text-bluegray-400">Subject</th>
+                <th class="font-bold text-bluegray-400">Marks</th>
+                <th class="font-bold text-bluegray-400">Grade</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-result>
+            <tr>
+                <td class="font-semibold text-gray-400">{{result.subject }}</td>
+                <td class="font-semibold text-gray-400">{{result.marks }}</td>
+                <td class="font-semibold text-gray-400">{{ result.grade }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+    <button 
+             pButton 
+            pRipple 
+            label="Print Student Result" 
+            class="p-button-help mt-3"
+            (click) = "printResult()">
+    </button>
+</p-card>
